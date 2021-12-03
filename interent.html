@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -8,11 +8,10 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
-    <title>About</title>
+    <title>Browser Wars</title>
   </head>
   <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-
     <header>
       <img class="logo" src="images/logo1.jpeg">
       <nav>
@@ -21,8 +20,6 @@
         <ul class="nav_links">
           <li><a href="pro.html">Home</a></li>
           <li><a href="breif.html">Brief</a></li>
-          <li><a href="python.html">Python</a></li>
-          <li><a href="calculator.html">Calculator</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="team.html">Team</a></li>
         </ul>
@@ -30,33 +27,52 @@
       </nav>
       <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
     </header>
-      <br><br>
+<br><br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Internet Search</h1>
+            <h3>WHAT IS A INTERNET SEARCH?</h3>
+            <p> A search query, often known as an internet search, is a request to a search engine that returns both sponsored and organic results. The paid results are the advertisements that display at the top and bottom of the page and are labeled as such. The unmarked results that show in between the advertising are known as organic results.
+              </p>
 
-      <div class="center">
-    
-        <h2> IS 601 - Web Systems Development</h2>
+</br>
+            <h3>INTERNET SEARCHES AND SEARCH ENGINE MARKETING (SEM)</h3>
+            <img style='float:left;width:320px;height:200px; margin-right:10px;' src="images/internet1.png " />
+            <p>Paid search, commonly known as search engine marketing, is the practice of placing advertisements on search engine results pages (SERPs). All of the main search engines have ad space, with Google Ads being the most popular (formerly known as AdWords). Google Ads is a pay-per-click network, which means that advertisers pay each time someone clicks on their ad.
+                As a result, search marketers place bids on certain keywords in order for their advertisements to appear when those terms are searched. Let's imagine Nike is bidding on the term "running shoes." Nike is placed into an automatic auction every time someone Googles "mens running shoes" or "running shoes for kids," to decide which ads receive the coveted, top-of-page-one positions. 
+                More information on the Google auction may be found here. 
+                As you can see, the search query is the starting point. If you're interested in paid search advertising, follow the WordStream blog to stay up to date on all you need to know.
+            </p>
+            </br></br>
 
-        <p>Contents</p>
-        <ul>  
-            <li>The Invention Of Internet</li>
-            <li>Browser Wars</li>
-            <li>Internet Search</li>
-            <li>Dot Com Bubble</li>
-            <li>IP Addresses and DNS</li>
-            <li>HTTP and HTML</li>
-        </ul>
+            <h3>INTERNET SEARCHES AND SEARCH ENGINE OPTIMIZATION (SEO)</h3>
+            <img style='float:left;width:250px;height:250px; margin-right:10px;' src="images/internet2.jpg" width="20%" height="20%">
+            <p> Search engine optimization may be thought of as the unpaid relative of search engine marketing (SEM). In essence, SEO is a set of tactics with a single purpose in mind: to improve your ranking in organic (non-advertised) search results. To put it another way, good SEO brings your website to the first page of Google. What's the sense of being on page one if you're not on page one? 
 
-        <p>We Created This Website With Z and F Layouts and We Have Hosted The Webpage on Azure. The Link and All The Code is Available on GITHUB. </p>
-        <a href="https://validator.w3.org">W3C Validator</a>
-      </div>
-        <script type="text/javascript">
-          function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
-          }
-        
-          function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-          }
-        </script>
- </body>
+                It all starts with a search query and a keyword once again. SEO is similar to SEM in that it focuses on keywords that are important to the company and tries to rank as high as feasible. For example, WordStream strives to be the top organic result for the search term "PPC software" (and succeeds!).
+                Take a look at Google's business model. It draws customers by providing an enormous, instantly accessible database of information. The SERP real estate is then sold to advertisements. Consumers are drawn to Google because of its ability to deliver high-quality, relevant search results. Consumers depart Google if the results aren't useful, and Google loses ad revenue.
+                This is useful information. You must be a high-quality resource in order to rank well in the organic results. To be more specific, you must be a trustworthy source. When a trustworthy website connects to your website, you get Domain Authority in Google's eyes. The more authoritative your website gets as a consequence of external links, the better you will fare in organic search results.
+            </p>
+            </br></br>
+          
+        </div>
+    </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginRight = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginRight = "0";
+    document.body.style.backgroundColor = "white";
+  }
+</script>
+</body>
 </html>
