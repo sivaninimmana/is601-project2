@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>AAA Testing</title>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <header>
+      <img class="logo" src="images/logo1.jpeg">
+      <nav>
+        <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <ul class="nav_links">
+          <li><a href="pro.html">Home</a></li>
+          <li><a href="breif.html">Brief</a></li>
+          <li><a href="python.html">Python</a></li>
+          <li><a href="calculator.html">Calculator</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="team.html">Team</a></li>
+        </ul>
+      </div>
+      </nav>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+    </header>
+<br><br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>AAA testing with Python</h1>
+            <p>Arrange-Act-Assert is a great way to structure test cases. It prescribes an order of operations:</p>
+            <h3>ARRANGE</h3>
+            <p> inputs and targets. Arrange steps should set up the test case. Does the test require any objects or special settings? Does it need to prep a database? Does it need to log into a web app? Handle all of these operations at the start of the test.</p>
+            </br></br>
+
+            <h3>ACT</h3>
+            <p>  on the target behavior. Act steps should cover the main thing to be tested. This could be calling a function or method, calling a REST API, or interacting with a web page. Keep actions focused on the target behavior.</p>    
+            </br></br>
+
+            <h3>ASSERT</h3>
+            <p> expected outcomes. Act steps should elicit some sort of response. Assert steps verify the goodness or badness of that response. Sometimes, assertions are as simple as checking numeric or string values. Other times, they may require checking multiple facets of a system. Assertions will ultimately determine if the test passes or fails.</p>    
+            </br></br>
+
+            <p>Here’s a basic unit test for Python’s absolute value function:</p>
+            <p>	def test_abs_for_a_negative_number():
+               
+                # Arrange
+                negative = -5
+                 
+                # Act
+                answer = abs(negative)
+                 
+                # Assert
+                assert answer == 5
+              </p>
+              <p>This test may seem trivial, but we can use it to illustrate our pattern. I like to write comments denoting each phase of the test case as well.</p>
+              <p>1.	The Arrange step creates a variable named “negative” for testing.</p>
+              <p>2.	The Act step calls the “abs” function using the “negative” variable and stores the returned value in a variable named “answer.” </p>
+              <p>3.	The Assert step verifies that “answer” is a positive value.</p>
+              <p>Why testing is important
+                Clearly separates what is being tested from the setup and verification steps.
+                Clarifies and focuses attention on a historically successful and generally necessary set of test steps.
+                Makes some TestSmells more obvious:
+                Assertions intermixed with "Act" code.
+                Test methods that try to test too many different things at once.
+                </p>
+        </div>
+    </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginRight = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginRight = "0";
+    document.body.style.backgroundColor = "white";
+  }
+</script>
+</body>
+</html>
