@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -8,11 +8,10 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
-    <title>About</title>
+    <title>Http and HTML</title>
   </head>
   <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-
     <header>
       <img class="logo" src="images/logo1.jpeg">
       <nav>
@@ -21,42 +20,54 @@
         <ul class="nav_links">
           <li><a href="pro.html">Home</a></li>
           <li><a href="breif.html">Brief</a></li>
-          <li><a href="python.html">Python</a></li>
-          <li><a href="calculator.html">Calculator</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="team.html">Team</a></li>
         </ul>
       </div>
       </nav>
+      <div id="imp">
       <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
     </header>
-      <br><br>
+<br><br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>HTTP and HTML </h1>
+            <h3>About</h3>
+            <p>HTTP</p>
+            <p>Hypertext Transfer Protocol (HTTP) is an application-layer protocol for transmitting hypermedia documents, such as HTML. It was designed for communication between web browsers and web servers, but it can also be used for other purposes. HTTP follows a classical client-server model, with a client opening a connection to make a request, then waiting until it receives a response.</p>
+            <P>HTML</P>
+            <P>HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content. Other technologies besides HTML are generally used to describe a web page's appearance/presentation (CSS) or functionality/behavior (JavaScript).</P>
+</br>
+            <h3>Components of HTTP-based systems</h3>
+            <img style='float:left;width:290px;height:260px; margin-right:10px;' src="images/components.jpg" />
+            <p>HTTP is a client-server protocol, which means that just one entity, the user-agent, sends requests (or a proxy on behalf of it). The user-agent is often a Web browser, but it may be anything, such as a robot that crawls the Internet to populate and maintain a search engine index. 
 
-      <div class="center">
-    
-        <h2> IS 601 - Web Systems Development</h2>
+              Each individual request is submitted to a server, which processes it and responds with a response. Between the client and the server, there are a number of entities known as proxies that fulfill various functions, such as acting as gateways or caches.</p>
+            <p>Between a browser and the server that handles the request, there are other computers: routers, modems, and so on. These are concealed in the network and transport layers thanks to the Web's tiered architecture. At the application layer, HTTP is on top. The underlying layers are essentially unimportant to the explanation of HTTP, despite their importance in detecting network problems.</p>
+            </br></br>
 
-        <p>Contents</p>
-        <ul>  
-            <li>The Invention Of Internet</li>
-            <li>Browser Wars</li>
-            <li>Internet Search</li>
-            <li>Dot Com Bubble</li>
-            <li>IP Addresses and DNS</li>
-            <li>HTTP and HTML</li>
-        </ul>
+            <h3>HTML</h3>
+            <img style='float:left;width:250px;height:250px; margin-right:10px;' src="images/http.jpg" width="20%" height="20%">
+            <p>HTML elements are the components that make up HTML pages. Images and other objects, such as interactive forms, can be embedded in the generated page using HTML techniques. HTML allows you to construct organized documents by indicating structural semantics for text elements like headers, paragraphs, lists, links, quotations, and other elements. Tags, which are written in angle brackets, separate HTML components. Tags like image and  insert material into the page immediately. Other tags, such as break line, surround and give information about document content, and may comprise sub-elements such as other tags. The HTML tags are not shown by browsers, but they are used to comprehend the page's content. </p>
+            </br></br>
 
-        <p>We Created This Website With Z and F Layouts and We Have Hosted The Webpage on Azure. The Link and All The Code is Available on GITHUB. </p>
-        <a href="https://validator.w3.org">W3C Validator</a>
-      </div>
-        <script type="text/javascript">
-          function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
-          }
-        
-          function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-          }
-        </script>
- </body>
+        </div>
+    </div>
+    </div>
+</div>
+<script type="text/javascript">
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginRight = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginRight = "0";
+    document.body.style.backgroundColor = "white";
+  }
+</script>
+</body>
 </html>
