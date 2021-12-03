@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -8,11 +8,10 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
-    <title>About</title>
+    <title>IP Addresses and DNS</title>
   </head>
   <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-
     <header>
       <img class="logo" src="images/logo1.jpeg">
       <nav>
@@ -21,42 +20,76 @@
         <ul class="nav_links">
           <li><a href="pro.html">Home</a></li>
           <li><a href="breif.html">Brief</a></li>
-          <li><a href="python.html">Python</a></li>
-          <li><a href="calculator.html">Calculator</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="team.html">Team</a></li>
         </ul>
       </div>
       </nav>
+      <div id="imp">
       <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
     </header>
-      <br><br>
+<br><br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>IP Addresses and DNS</h1>
+            <h3>About</h3>
+            <p>The Domain Name System (DNS) is the Internet's phone book. Domain names such as nytimes.com and espn.com allow people to access content on the internet. Internet Protocol (IP) addresses are used to communicate between web browsers. DNS converts domain names to IP addresses, allowing browsers to access resources on the Internet. 
+                Each Internet-connected device has a unique IP address that other machines use to locate it. DNS servers minimize the need for people to learn IP addresses like 192.168.1.1 (in IPv4) or more complex modern alphanumeric IP addresses like 2400:cb00:2048:1::c629:d7a2 (in IPv6) (in IPv6).Apart from the first request, the DNS search occurs "behind the scenes" in the web browser and requires no involvement from the user's computer.</p>
 
-      <div class="center">
-    
-        <h2> IS 601 - Web Systems Development</h2>
+</br>
+            <h3>How DNS Works?</h3>
+            <img style='float:left;width:290px;height:260px; margin-right:10px;' src="images/ip1.jpg" />
+            <p>DNS resolution is the process of turning a hostname (for example, www.example.com) into a computer-friendly IP address (such as 192.168.1.1). Each device on the Internet is assigned an IP address, which is required to locate the right Internet device, just like a street address is required to locate a certain residence. When a user requests a webpage, a translation must take place between the user's input (example.com) and the machine-friendly address required to locate the example.com webpage. 
 
-        <p>Contents</p>
-        <ul>  
-            <li>The Invention Of Internet</li>
-            <li>Browser Wars</li>
-            <li>Internet Search</li>
-            <li>Dot Com Bubble</li>
-            <li>IP Addresses and DNS</li>
-            <li>HTTP and HTML</li>
-        </ul>
+                To comprehend the DNS resolution process, it's necessary to first learn about the many hardware components that a DNS query must transit through. Apart from the first request, the DNS search occurs "behind the scenes" in the web browser and requires no involvement from the user's computer.</p>
+            </br></br>
 
-        <p>We Created This Website With Z and F Layouts and We Have Hosted The Webpage on Azure. The Link and All The Code is Available on GITHUB. </p>
-        <a href="https://validator.w3.org">W3C Validator</a>
-      </div>
-        <script type="text/javascript">
-          function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
-          }
-        
-          function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-          }
-        </script>
- </body>
+            <h3>4 DNS servers involved in loading a webpage:</h3>
+            <img style='float:left;width:250px;height:250px; margin-right:10px;' src="images/ip2.jpg" width="20%" height="20%">
+            <p>DNS recursor - The recursor can be compared to a librarian who is requested to locate a certain book in a library. The DNS recursor is a server that receives requests from client machines via web browsers and other programs. The recursor is often in charge of making extra queries to satisfy the client's DNS query.</p>
+            <p>Root nameserver - The root server is the initial stage in converting human-readable host names to IP addresses (resolving). It's similar to a library's index, which leads to different book racks; it's usually used as a pointer to other, more specialized places.</p>
+            <p>TLD nameserver - The top level domain server (TLD) can be compared to a particular shelf in a library. The final component of a hostname is hosted by this nameserver, which is the following stage in the search for a specific IP address .</p>
+            <p>Authoritative nameserver - This last nameserver may be compared to a dictionary on a bookshelf, where a specific name can be translated into its explanation. In a nameserver inquiry, the authoritative nameserver is the last stop. If the authoritative name server has access to the requested record, it will provide the requested hostname's IP address to the DNS Recursor (the librarian) who initiated the request. </p>
+            <br><br>
+            <h3>Steps in DNS Lookup:</h3>
+            <img style='float:left;width:350px;height:300px; margin-right:10px;' src="images/ip3.jpg"/>
+            <p> The majority of the time, DNS is concerned with translating a domain name into an IP address. It's helpful to track the course of a DNS lookup from a web browser to the DNS lookup process and back to understand how this process works. Let's look at the steps one by one.</p>
+            <p> The 8 steps in a DNS lookup:</p>
+            <p>1. A user types ‘example.com’ into a web browser and the query travels into the Internet and is received by a DNS recursive resolver.</p>
+            <p>2. The resolver then queries a DNS root nameserver (.).</p>
+            <p>3. The root server then responds to the resolver with the address of a Top Level Domain (TLD) DNS server (such as .com or .net), which stores the information for its domains. When searching for example.com, our request is pointed toward the .com TLD.</p>
+            <p>4. The resolver then makes a request to the .com TLD.</p>
+            <p>5. The TLD server then responds with the IP address of the domain’s nameserver, example.com.</p>
+            <p>6. Lastly, the recursive resolver sends a query to the domain’s nameserver.</p>
+            <p>7. The IP address for example.com is then returned to the resolver from the nameserver.</p>
+            <p>8. The DNS resolver then responds to the web browser with the IP address of the domain requested initially.</p>
+            <p>Once the 8 steps of the DNS lookup have returned the IP address for example.com, the browser is able to make the request for the web page:</p>
+                
+            <p>9. The browser makes a HTTP request to the IP address.</p>
+            <p>10. The server at that IP returns the webpage to be rendered in the browser (step 10).</p>
+            </br></br>
+            <h3>DNS Queries</h3>
+            <img style='float:left;width:290px;height:260px; margin-right:10px;' src="images/ip4.jpg" />
+            <p>1.Recursive query - A DNS client expects a DNS server (usually a DNS recursive resolver) to reply to a recursive query with either the requested resource record or an error message if the resolver is unable to locate it.</p>
+            <p>2.Iterative query - In this case, the DNS client will let the DNS server deliver the best possible response. If the requested DNS server cannot find a match for the query name, it will forward the request to a DNS server that is authoritative for a lower level of the domain namespace. After then, the DNS client will query the referral address. This procedure continues along the query chain with other DNS servers until an error or timeout occurs.</p>
+            <p>3.Non-recursive query - This usually happens when a DNS resolver client requests a record from a DNS server that it has access to, either because it is authoritative for the record or because the record is in its cache. DNS records are typically cached by DNS servers to save unnecessary bandwidth usage and stress on upstream systems.</p>
+        </div>
+    </div>
+    </div>
+</div>
+<script type="text/javascript">
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginRight = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginRight = "0";
+    document.body.style.backgroundColor = "white";
+  }
+</script>
+</body>
 </html>
