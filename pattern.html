@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -8,11 +8,10 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
-    <title>About</title>
+    <title>AAA Testing</title>
   </head>
   <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-
     <header>
       <img class="logo" src="images/logo1.jpeg">
       <nav>
@@ -30,33 +29,60 @@
       </nav>
       <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
     </header>
-      <br><br>
+<br><br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <p>SOLID is an acronym for the first five principles of the article Principles of Object-Oriented Design by Robert C. Martin.
+              Applying these principles helps to develop maintainable and extensible code. They also help to catch code smells, refactor code easily, and practice a good agile development.
+              </p>
 
-      <div class="center">
-    
-        <h2> IS 601 - Web Systems Development</h2>
+            <p>
+              S stands for SRP - Single Responsibility Principle
+               </p>
+             <p>O stands for OCP - Open-Closed Principle</p>
+            <p>L stands for LSP - Liskov Substitution Principle</p>
+            <p>I stands for ISP - Interface Segregation Principle</p>
+            <p>D stands for DIP - Dependency Inversion Principle</p>
+            </br>
+            <p>SRP - Single Responsibility Principle
+              This principle means that an entity should do only one thing. So single responsibility denotes some work in isolation. Therefore, if we have a software entity that performs some calculations the only reason to change it is if these calculations need to change.              
+            </p>
+            </br></br>
+            <p>OCP - Open-Closed Principle
+              A desirable property that our software entities is to be easy to extend his functionality without the need to change the entity itself.
+              </p>
+            </br></br>
+            <p> LSP - Liskov Substitution Principle
+              What this principle means is that objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program. So if you pass a subclass of an abstraction you need to make sure you don’t alter any behavior or state semantics of the parent abstraction.
+              </p>
+            </br></br>
+            <p> ISP - Interface Segregation Principle
+              In this case, we want to keep interfaces as small as possible, so clients are not forced to implement methods that they don’t actually need.
+              </p>    
+            </br></br>
+            <p> DIP - Dependency Inversion Principle
+              What this principle comes to says is that high-level modules should not depend on low-level modules, but they should depend on abstractions. This principle allows for decoupling
+              </p>    
+            </br></br>
 
-        <p>Contents</p>
-        <ul>  
-            <li>The Invention Of Internet</li>
-            <li>Browser Wars</li>
-            <li>Internet Search</li>
-            <li>Dot Com Bubble</li>
-            <li>IP Addresses and DNS</li>
-            <li>HTTP and HTML</li>
-        </ul>
+        </div>
+    </div>
+    </div>
+</div>
 
-        <p>We Created This Website With Z and F Layouts and We Have Hosted The Webpage on Azure. The Link and All The Code is Available on GITHUB. </p>
-        <a href="https://validator.w3.org">W3C Validator</a>
-      </div>
-        <script type="text/javascript">
-          function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
-          }
-        
-          function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-          }
-        </script>
- </body>
+<script type="text/javascript">
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginRight = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginRight = "0";
+    document.body.style.backgroundColor = "white";
+  }
+</script>
+</body>
 </html>
