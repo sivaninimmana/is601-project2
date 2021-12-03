@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -8,11 +8,10 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
-    <title>About</title>
+    <title>AAA Testing</title>
   </head>
   <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-
     <header>
       <img class="logo" src="images/logo1.jpeg">
       <nav>
@@ -30,33 +29,45 @@
       </nav>
       <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
     </header>
-      <br><br>
+<br><br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+          <h1>The Principles Of OOP</h1>
 
-      <div class="center">
-    
-        <h2> IS 601 - Web Systems Development</h2>
+          <h3>ENCAPSULATION</h3>
+          <p>Encapsulation: Encapsulation is one of the fundamental concepts in object-oriented programming (OOP). It describes the idea of wrapping data and the methods that work on data within one unit. This puts restrictions on accessing variables and methods directly and can prevent the accidental modification of data. To prevent accidental change, an object’s variable can only be changed by an object’s method. Those types of variables are known as private variable.</p>
+          </br></br>
 
-        <p>Contents</p>
-        <ul>  
-            <li>The Invention Of Internet</li>
-            <li>Browser Wars</li>
-            <li>Internet Search</li>
-            <li>Dot Com Bubble</li>
-            <li>IP Addresses and DNS</li>
-            <li>HTTP and HTML</li>
-        </ul>
+          <h3>INHERITANCE</h3>
+          <p>: A relationship between classes whereby child (or derived) classes inherit all of the members of the parent (or base) class. For example, an application may define a “business object base” class that all business objects inherit from. This base class can contain members common to all child classes, such as entity state information.</p>
+          <br><br>
 
-        <p>We Created This Website With Z and F Layouts and We Have Hosted The Webpage on Azure. The Link and All The Code is Available on GITHUB. </p>
-        <a href="https://validator.w3.org">W3C Validator</a>
-      </div>
-        <script type="text/javascript">
-          function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
-          }
-        
-          function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-          }
-        </script>
- </body>
+          <h3>POLYMORPHISM</h3>
+          <p>Basically “many forms”. The concept that a single method can behave differently depending on the type of object that calls it. For example, the Validate method in Customer class performs differently from the Validate method in the Order class.</p>
+          </br></br>
+
+          <h3>Abstraction</h3>
+          <p>The process of defining classes by simplifying reality, ignoring extraneous details, and focusing on what is important for a purpose. For example, a customer may have a name, title, address, marital status, pets, children, credit card information, vehicles, etc. But if the purpose of the application is to process orders, the application may only care about the customer’s name, address, and credit card information.</p>
+          </br></br>
+
+        </div>
+    </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginRight = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginRight = "0";
+    document.body.style.backgroundColor = "white";
+  }
+</script>
+</body>
 </html>
