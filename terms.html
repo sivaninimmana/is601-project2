@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Glossary of OOP Terms</title>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <header>
+      <img class="logo" src="images/logo1.jpeg">
+      <nav>
+        <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <ul class="nav_links">
+          <li><a href="pro.html">Home</a></li>
+          <li><a href="breif.html">Brief</a></li>
+          <li><a href="python.html">Python</a></li>
+          <li><a href="calculator.html">Calculator</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="team.html">Team</a></li>
+        </ul>
+      </div>
+      </nav>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+    </header>
+<br><br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Glossary of OOP Terms</h1>
+            <p>	Factory: In object-oriented programming (OOP), a factory is an object for creating other objects – formally a factory is a function or method that returns objects of a varying prototype or class from some method call, which is assumed to be "new". More broadly, a subroutine that returns a "new" object may be referred to as a "factory", as in factory method or factory function. This is a basic concept in OOP, and forms the basis for a number of related software design patterns.</p>
+            <p>	Instantiation: In computer science, instantiation is the realization of a predefined object. In OOP (object-oriented programming), a class of object may be defined. All objects of this class have a certain set of properties (associated variables), accessories (ways to access those variables), and methods (functions). An instance of that object may then be declared, giving it a unique, named identity so that it may be used in the program. This process is called "instantiation."</p>
+             <p>	Object: An object, in object-oriented programming (OOP), is an abstract data type created by a developer. It can include multiple properties and methods and may even contain other objects. In most programming languages, objects are defined as classes. Objects provide a structured approach to programming. By defining a dataset as a custom object, a developer can easily create multiple similar objects and modify existing objects within a program.</p>
+            <p>	Class: In object-oriented programming (OOP), a class is pattern or blueprint for creating an object. A class contains all attributes and behaviours that describe or make up the object.</p>
+            <p>	Namespace: A namespace is a collection of currently defined symbolic names along with information about the object that each name references. You can think of a namespace as a dictionary in which the keys are the object names and the values are the objects themselves. Each key-value pair maps a name to its corresponding object. Python itself maintains a namespace in the form of a Python dictionary.</p>
+            <p>	Constructor: In class-based object-oriented programming, a constructor is a special type of subroutine called to create an object. It prepares the new object for use, often accepting arguments that the constructor uses to set required member variables.  </p>
+            <p>	Fixture: Fixtures is a fancy word for sample data. Fixtures allow you to populate your testing database with predefined data before your tests run.</p>
+            <p>	Type Hint: In simple word, type hinting means providing hints to function to only accept the given data type. In technical word we can say that Type Hinting is method by which we can force function to accept the desired data type.</p>
+            <p>	Typecast: Typecasting, or type conversion, is a method of changing an entity from one data type to another. It is used in computer programming to ensure variables are correctly processed by a function. An example of typecasting is converting an integer to a string.</p>
+    <p>	Unit Test: Unit testing is a software testing method by which individual units of source code are put under various tests to determine whether they are fit for use. It determines and ascertains the quality of your code.</p>
+    <p>	Static: In object-oriented programming, there is also the concept of a static member variable, which is a class variable of a statically defined class, i.e., a member variable of a given class which is shared across all instances (objects), and is accessible as a member variable of these objects.</p>     
+    <p>	Class Method: The @classmethod decorator is a built-in function decorator that is an expression that gets evaluated after your function is defined. The result of that evaluation shadows your function definition. A class method receives the class as an implicit first argument, just like an instance method receives the instance</p>   
+    <p>	Facade: The facade pattern is a software-design pattern commonly used in object-oriented programming. Facade Method is a Structural Design pattern that provides a simpler unified interface to a more complex system. The word Facade means the face of a building or particularly an outer lying interface of a complex system, consists of several sub-systems. It is an essential part Gang of Four design patterns. It provides an easier way to access methods of the underlying systems by providing a single entry point.</p>
+    <p>	Design Pattern used: Object-oriented design patterns typically show relationships and interactions between classes or objects, without specifying the final application classes or objects that are involved. Patterns that imply mutable state may be unsuited for functional programming languages.</p>
+    <p>	Method: A method in object-oriented programming (OOP) is a procedure associated with a message and an object. An object consists of data and behavior; these comprise an interface, which specifies how the object may be utilized by any of its various consumers.</p>
+    <p>	Property: A property, in some object-oriented programming languages, is a special sort of class member, intermediate in functionality between a field (or data member) and a method. Properties are characteristics or attributes of an object</p>
+    </br></br>
+    <a href="https://validator.w3.org">W3C Validator</a>
+        </div>
+    </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginRight = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginRight = "0";
+    document.body.style.backgroundColor = "white";
+  }
+</script>
+</body>
+</html>
